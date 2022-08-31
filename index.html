@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Chronometer</title>
+    <link rel="shortcut icon" href="assets/images/clock.png"/>
+    <link href="assets/css/fonts/DS-DIGIT.TTF" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="opacity"></div>
+        <div class="container">
+            <div class="cabecalho">
+                <div class="logoBox">
+                    <img src="assets/images/clock.png">
+                </div>
+                <div class="titleBox">
+                    <h1>Chronometer</h1><h2>Online</h2>
+                </div>
+            </div>
+
+            <div class="demo">
+                    <h2 id="mostrador">00:00:00:00</h2>
+            </div>
+            
+            <div class="buttonBox">
+
+                    <div class="button" onclick="start()">
+                        <div class="buttonImg">
+                        
+                            <img src="assets/images/play.png">
+                        </div>
+                        <div class="buttonText">Start</div>
+                    </div>
+
+                    <div class="button" onclick="limpar()">
+                        <div class="buttonImg">
+                            <img src="assets/images/clear.png">
+                        </div>
+                        <div class="buttonText">Zero</div>
+                    </div>
+
+                    <div class="button" onclick="anotar()">
+                        <div class="buttonImg">
+                            <img src="assets/images/notes.png">
+                        </div>
+                        <div class="buttonText">Register</div>
+                    </div>
+            </div>
+
+            <div class="markBox">
+                <h3>Time records:</h3>
+                <textarea name="areaMarcacoes"></textarea>
+                <button onclick="limparTextarea()">Clean</button>
+            </div>
+                
+            
+        </div>
+    
+        <script src="assets/js/script.js"></script>
+    
+    </body>
+
+</html>
