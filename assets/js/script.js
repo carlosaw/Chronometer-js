@@ -76,14 +76,19 @@ function start() {
 
 function anotar() {
     document.querySelector('.markBox textarea').setAttribute('disabled', false);
+
     let conteudo = document.querySelector('.markBox textarea').value;
+
     if(cen !== '00') {
         document.querySelector('.markBox textarea').innerHTML = conteudo + cont + ". " + hrs + ":" + mts + ":" + sec + ":" + cen + '\n';
     } else {
-        document.querySelector('.markBox textarea').innerHTML = 'Não há tempo para registrar! - "Clique em Start"';
-    }    
+        document.querySelector('.markBox textarea').innerHTML = setAttribute('disabled', true);
+    }
+    
     document.querySelector('.markBox textarea').setAttribute('disabled', true);
+
     let baixo = document.querySelector('.markBox textarea').scrollHeight;
+
     document.querySelector('.markBox textarea').scrollTo(0, baixo);
     cont++;
 };
