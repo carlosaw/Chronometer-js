@@ -1,4 +1,5 @@
 # Chronometer-js
 Cronômetro - JavaScript
 
-# running
+# Land Page
+[https://carlosaw.github.io/chronometer-js/]
